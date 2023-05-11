@@ -1,4 +1,90 @@
 * {
-    box-sizing: border-box;
-  }
-  
+  box-sizing: border-box;
+}
+
+.Body {
+  margin-top: 0;
+  height: 839px;
+  width: 1025px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+
+}
+
+.jogo {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+img {
+  margin-top: 56px;
+  margin-left: 38px;
+  /* margin-bottom: 70px; */
+  height: 467px;
+  width: 400px;
+  size: 100%;
+}
+
+.escolher {
+  margin-top: 89px;
+  margin-right: 53px;
+  width: 200px;
+  height: 60px;
+  background: #27AE60;
+  border: 1px solid #27AE60;
+  border-radius: 8px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+
+}
+
+.containerLetras {
+  margin: 0 auto;
+  width: 664px;
+  height: 91px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.letras {
+  height: 40px;
+  width: 40px;
+  margin: 4px;
+  background: #9FAAB5;
+  color: #798A9F;
+  border: 1px solid #7AA7C7;
+  border-radius: 3px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.Nopress {
+  background: #E1ECF4;
+  border: 1px solid #7AA7C7;
+  color: #39739D;
+  text-transform: uppercase;
+
+
+}
+
+button:hover {
+  cursor: pointer;
+}
