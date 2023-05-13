@@ -57,7 +57,7 @@ img {
   justify-content: center;
 }
 
-.letras {
+.btdesativado {
   height: 40px;
   width: 40px;
   margin: 4px;
@@ -73,14 +73,26 @@ img {
   letter-spacing: 0em;
   text-align: center;
   text-transform: uppercase;
+  
 
 }
 
-.Nopress {
+.btativado {
+  height: 40px;
+  width: 40px;
+  margin: 4px;
   background: #E1ECF4;
   border: 1px solid #7AA7C7;
   color: #39739D;
   text-transform: uppercase;
+  border-radius: 3px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
 
 
 }
