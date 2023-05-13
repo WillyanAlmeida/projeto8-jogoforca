@@ -18,7 +18,22 @@
   justify-content: space-between;
 }
 
+.direita {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 
+span {
+  font-family: Noto Sans;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 68px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
 
 img {
   margin-top: 56px;
@@ -73,7 +88,7 @@ img {
   letter-spacing: 0em;
   text-align: center;
   text-transform: uppercase;
-  
+
 
 }
 

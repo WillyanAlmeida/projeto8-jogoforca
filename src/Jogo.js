@@ -14,22 +14,22 @@ let erro = 0;
 
 let i=0
 
-export default function Jogo({iniciarJogo, btescolher, clicks}) {
+export default function Jogo({iniciarJogo, btescolher, clicks, palavra, cont}) {
     const forca = [forca0, forca1, forca2, forca3, forca4, forca5, forca6];
    
     return (
         <div className="jogo">
             <div className="imagem-forca">
-                <img src={forca[clicks]}></img>
+                <img src={forca[clicks-cont]}></img>
             </div>
             <div className="direita">
                 <div className="escolher-palavra" >
                     <button className="escolher" disabled={btescolher} onClick={iniciarJogo} >Escolher Palavra</button>
                 </div>
                 <div className="palavraforca">
-                    <ul>
-                       
-                    </ul>
+                    <div>
+                    <span>{palavra}</span>
+                    </div>
                 </div>
             </div>
         </div>
