@@ -1,5 +1,3 @@
-import { click } from "@testing-library/user-event/dist/click";
-import { useState } from "react";
 
 const alfabeto = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
@@ -72,6 +70,6 @@ function Letra({ setLetraclickf, letraclickf, btstatus, letra, setClicks, clicks
 
 
   return (
-    <button disabled={btstatus || a} className={btstatus || a ? 'btdesativado' : 'btativado'} onClick={letraclick}>{letra}</button>
+    <button disabled={btstatus || a} className={btstatus || a ? 'btdesativado' : 'btativado'} onClick={letraclick} data-test="letter">{letra}</button>
   )
 }
