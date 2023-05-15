@@ -14,7 +14,7 @@ let erro = 0;
 
 let i=0
 
-export default function Jogo({iniciarJogo, btescolher, clicks, palavra, cont}) {
+export default function Jogo({iniciarJogo, btescolher, clicks, palavra, cont, classpalavra}) {
     const forca = [forca0, forca1, forca2, forca3, forca4, forca5, forca6];
    
     return (
@@ -26,9 +26,9 @@ export default function Jogo({iniciarJogo, btescolher, clicks, palavra, cont}) {
                 <div className="escolher-palavra" >
                     <button className="escolher" disabled={btescolher} onClick={iniciarJogo} >Escolher Palavra</button>
                 </div>
-                <div className="palavraforca">
+                <div >
                     <div>
-                    <span>{palavra}</span>
+                    <span className={classpalavra}>{palavra}</span>
                     </div>
                 </div>
             </div>
