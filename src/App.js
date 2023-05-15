@@ -17,19 +17,22 @@ export default function App() {
 
   function iniciarJogo() {
     console.log('iniciarJogo')
+    setClasspalavra('palavraforca')
     btstatus=false;
     setBtstatus(btstatus)
     palavra=palavras.sort(()=>(Math.random() - 0.5));
-    palavra=palavra[0]
-    
+    palavra=palavra[0]    
     palavra=palavra.split('')
-    
-    setMpalavra([...palavra])
+    letraclickf=[]
+    setLetraclickf([])
+    setPalavra(palavra)
+    mpalavra=[...palavra]
+    setMpalavra(mpalavra)
     console.log(palavra)
     palavra = palavra.map((y)=> letraclickf.includes(y)?y:'_ ')
     setPalavra(palavra)
     
-    setLetraclickf([])
+    
     setClicks(0)
     setCont(0)
     console.log(palavra)
@@ -49,6 +52,7 @@ export default function App() {
       classpalavra={classpalavra}
       />
       <Letras
+       cont={cont}
       btstatus={btstatus}
       mpalavra={mpalavra}
       clicks={clicks}
@@ -59,6 +63,7 @@ export default function App() {
       setLetraclickf={setLetraclickf}
       setClasspalavra={setClasspalavra}
       setPalavra={setPalavra}
+      setMpalavra={setMpalavra}
       />
     </div>
   );
