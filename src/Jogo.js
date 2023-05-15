@@ -20,15 +20,15 @@ export default function Jogo({iniciarJogo, btescolher, clicks, palavra, cont, cl
     return (
         <div className="jogo">
             <div className="imagem-forca">
-                <img src={forca[clicks-cont]}></img>
+                <img src={forca[clicks-cont]} data-test="game-image"></img>
             </div>
             <div className="direita">
                 <div className="escolher-palavra" >
-                    <button className="escolher" disabled={btescolher} onClick={iniciarJogo} >Escolher Palavra</button>
+                    <button className="escolher" disabled={btescolher} onClick={iniciarJogo} data-test="choose-word">Escolher Palavra</button>
                 </div>
                 <div >
                     <div>
-                    <span className={classpalavra}>{palavra}</span>
+                    <span className={classpalavra}data-test="word">{palavra}</span>
                     </div>
                 </div>
             </div>
